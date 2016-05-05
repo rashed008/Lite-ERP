@@ -1,0 +1,240 @@
+[26-Apr-2016 05:34:55 Europe/Berlin] 0::session.inc:401: include_once(./tmp/faillog.php): failed to open stream: No such file or directory
+[26-Apr-2016 05:34:55 Europe/Berlin] 0::session.inc:401: include_once(): Failed opening './tmp/faillog.php' for inclusion (include_path='C:\xampp\php\PEAR')
+[26-Apr-2016 05:35:27 Europe/Berlin] 0::session.inc:401: include_once(./tmp/faillog.php): failed to open stream: No such file or directory
+[26-Apr-2016 05:35:27 Europe/Berlin] 0::session.inc:401: include_once(): Failed opening './tmp/faillog.php' for inclusion (include_path='C:\xampp\php\PEAR')
+[26-Apr-2016 05:35:40 Europe/Berlin] 0::session.inc:401: include_once(./tmp/faillog.php): failed to open stream: No such file or directory
+[26-Apr-2016 05:35:40 Europe/Berlin] 0::session.inc:401: include_once(): Failed opening './tmp/faillog.php' for inclusion (include_path='C:\xampp\php\PEAR')
+[26-Apr-2016 08:48:53 Europe/Berlin] 0:admin:packages.inc:342: unlink(../modules/_cache/Extensions.gz): Permission denied
+[26-Apr-2016 08:48:53 Europe/Berlin] 0:admin:packages.inc:534: ksort() expects parameter 1 to be array, null given
+[26-Apr-2016 08:48:53 Europe/Berlin] 0:admin:inst_module.php:111: Invalid argument supplied for foreach()
+[26-Apr-2016 10:55:55 Europe/Berlin] 0::logout.php:50: session_destroy(): Session object destruction failed
+[26-Apr-2016 10:57:02 Europe/Berlin] 0::logout.php:50: session_destroy(): Session object destruction failed
+[27-Apr-2016 05:21:06 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:21:18 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:21:18 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:24:38 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:24:38 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:24:39 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:24:39 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:28:03 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:28:03 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:28:07 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:28:07 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:28:11 Europe/Berlin] 0:admin:JsHttpRequest.php:388: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\frontaccounting\modules\HumanResourceManagement\hooks.php:1467)
+[27-Apr-2016 05:34:44 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:34:44 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:34:44 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:34:45 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:34:45 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 05:34:45 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 06:48:09 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 06:48:09 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 06:48:09 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 07:04:33 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 07:04:33 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 07:04:33 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:01:11 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:01:11 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:01:11 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:01:19 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:01:19 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:01:19 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:24:55 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:24:55 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:24:55 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:24:55 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:25:05 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:25:05 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:25:05 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:25:05 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:26:58 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:26:58 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:26:58 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:26:58 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:26:59 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:26:59 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:26:59 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:26:59 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:33:52 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:33:52 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:33:52 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:33:52 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:06 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:06 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:06 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:06 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:06 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:13 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:13 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:13 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:13 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:36:13 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:36 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:36 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:36 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:36 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:43 Europe/Berlin] 0:admin:inst_module.php:69: include_once(../modules/payroll/hooks.php): failed to open stream: No such file or directory
+[27-Apr-2016 08:39:43 Europe/Berlin] 0:admin:inst_module.php:69: include_once(): Failed opening '../modules/payroll/hooks.php' for inclusion (include_path='C:\xampp\php\PEAR')
+[27-Apr-2016 08:39:44 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:44 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:44 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:44 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:50 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:50 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:50 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:39:50 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:40:05 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:40:05 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:40:05 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:40:05 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:40:10 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:40:10 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:40:10 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:40:10 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:48:16 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:48:16 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:48:16 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:48:16 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:48:17 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:48:17 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:48:17 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:48:17 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:51:59 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:51:59 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:51:59 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:51:59 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:52:00 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:52:00 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:52:00 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 08:52:00 Europe/Berlin] 0:admin:packages.inc:532: array_merge(): Argument #1 is not an array
+[27-Apr-2016 12:36:28 Europe/Berlin] 0::logout.php:50: session_destroy(): Session object destruction failed
+[28-Apr-2016 05:30:07] 0:admin:types.inc:86: include_once(../dimensions/includes/dimensions_db.inc) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory
+[28-Apr-2016 05:30:08] 0:admin:types.inc:86: include_once() [<a href='function.include'>function.include</a>]: Failed opening '../dimensions/includes/dimensions_db.inc' for inclusion (include_path='.;C:\xampp\php\PEAR')
+[28-Apr-2016 05:30:11] 0::types.inc:86: include_once(./dimensions/includes/dimensions_db.inc) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory
+[28-Apr-2016 05:30:11] 0::types.inc:86: include_once() [<a href='function.include'>function.include</a>]: Failed opening './dimensions/includes/dimensions_db.inc' for inclusion (include_path='.;C:\xampp\php\PEAR')
+[28-Apr-2016 05:30:14] 0::types.inc:86: include_once(./dimensions/includes/dimensions_db.inc) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory
+[28-Apr-2016 05:30:14] 0::types.inc:86: include_once() [<a href='function.include'>function.include</a>]: Failed opening './dimensions/includes/dimensions_db.inc' for inclusion (include_path='.;C:\xampp\php\PEAR')
+[28-Apr-2016 05:30:14] 0:admin:types.inc:86: include_once(./dimensions/includes/dimensions_db.inc) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory
+[28-Apr-2016 05:30:14] 0:admin:types.inc:86: include_once() [<a href='function.include'>function.include</a>]: Failed opening './dimensions/includes/dimensions_db.inc' for inclusion (include_path='.;C:\xampp\php\PEAR')
+[28-Apr-2016 05:34:45] 0:admin:types.inc:86: include_once(./dimensions/includes/dimensions_db.inc) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory
+[28-Apr-2016 05:34:45] 0:admin:types.inc:86: include_once() [<a href='function.include'>function.include</a>]: Failed opening './dimensions/includes/dimensions_db.inc' for inclusion (include_path='.;C:\xampp\php\PEAR')
+[03-May-2016 03:59:59] <b>DATABASE ERROR :</b> could not do check empty query<br>error code : 1146<br>error message : Table 'frontaccounting.0_payroll_tax_type' doesn't exist<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
+[03-May-2016 04:24:06] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0020-02-00', '05/01/2016')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('Jahid', 'Rahman', 'Mirpur 1', '01747803655', 'jahifbusyv@gmail.com', '2015-05-12', '1', '1', '1', '223', '12345', '4', ''', '0020-02-00', '05/01/2016')<br><br><br>
+[03-May-2016 04:24:10] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0020-02-00', '05/01/2016')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('Jahid', 'Rahman', 'Mirpur 1', '01747803655', 'jahifbusyv@gmail.com', '2015-05-12', '1', '1', '1', '223', '12345', '4', ''', '0020-02-00', '05/01/2016')<br><br><br>
+[03-May-2016 04:24:12] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0020-02-00', '05/01/2016')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('Jahid', 'Rahman', 'Mirpur 1', '01747803655', 'jahifbusyv@gmail.com', '2015-05-12', '1', '1', '1', '223', '12345', '4', ''', '0020-02-00', '05/01/2016')<br><br><br>
+[03-May-2016 04:24:14] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0020-02-00', '05/01/2016')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('Jahid', 'Rahman', 'Mirpur 1', '01747803655', 'jahifbusyv@gmail.com', '2015-05-12', '1', '1', '1', '223', '12345', '4', ''', '0020-02-00', '05/01/2016')<br><br><br>
+[03-May-2016 04:24:30] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0020-02-00', '05/01/2016')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('Jahid', 'Rahman', 'Mirpur 1', 'njm', 'jahifbusyv@gmail.com', '2015-05-12', '1', '1', '0', '223', '12345', '4', ''', '0020-02-00', '05/01/2016')<br><br><br>
+[03-May-2016 04:25:50] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0020-02-00', '05/01/2016')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('Jahid', 'Rahman', 'Mirpur 1', 'njm', 'jahifbusyv@gmail.com', '2015-05-12', '1', '1', '0', '223', '12345', '4', ''', '0020-02-00', '05/01/2016')<br><br><br>
+[03-May-2016 04:27:27] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-01', 'lashdaksd')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('Jahid', 'Rahman', 'Mirpur 1', 'njm', 'jahifbusyv@gmail.com', '2015-05-12', '1', '1', '0', '223', '12345', '4', ''2', '2016-05-01', 'lashdaksd')<br><br><br>
+[03-May-2016 04:27:28] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-01', 'lashdaksd')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('Jahid', 'Rahman', 'Mirpur 1', 'njm', 'jahifbusyv@gmail.com', '2015-05-12', '1', '1', '0', '223', '12345', '4', ''2', '2016-05-01', 'lashdaksd')<br><br><br>
+[03-May-2016 04:28:17] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-03', 'ewstd')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('werf', 'dsfdsfsdf', 'sdf', '3435', 'dsf@gmail.com', '2016-05-03', '260', '2', '12', '12', '23', '3', ''2', '2016-05-03', 'ewstd')<br><br><br>
+[03-May-2016 04:35:24] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2013-05-06', 'q')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('q', 'q', 'q', '12', 'abdullah.enayet@gmail.com', '2010-05-02', '26', '2', '12', '1212', '123', '2', ''1', '2013-05-06', 'q')<br><br><br>
+[03-May-2016 04:35:25] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2013-05-06', 'q')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('q', 'q', 'q', '12', 'abdullah.enayet@gmail.com', '2010-05-02', '26', '2', '12', '1212', '123', '2', ''1', '2013-05-06', 'q')<br><br><br>
+[03-May-2016 04:35:25] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2013-05-06', 'q')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('q', 'q', 'q', '12', 'abdullah.enayet@gmail.com', '2010-05-02', '26', '2', '12', '1212', '123', '2', ''1', '2013-05-06', 'q')<br><br><br>
+[03-May-2016 04:35:25] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2013-05-06', 'q')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('q', 'q', 'q', '12', 'abdullah.enayet@gmail.com', '2010-05-02', '26', '2', '12', '1212', '123', '2', ''1', '2013-05-06', 'q')<br><br><br>
+[03-May-2016 04:35:26] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2013-05-06', 'q')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('q', 'q', 'q', '12', 'abdullah.enayet@gmail.com', '2010-05-02', '26', '2', '12', '1212', '123', '2', ''1', '2013-05-06', 'q')<br><br><br>
+[03-May-2016 04:35:26] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2013-05-06', 'q')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('q', 'q', 'q', '12', 'abdullah.enayet@gmail.com', '2010-05-02', '26', '2', '12', '1212', '123', '2', ''1', '2013-05-06', 'q')<br><br><br>
+[03-May-2016 04:35:26] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2013-05-06', 'q')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('q', 'q', 'q', '12', 'abdullah.enayet@gmail.com', '2010-05-02', '26', '2', '12', '1212', '123', '2', ''1', '2013-05-06', 'q')<br><br><br>
+[03-May-2016 04:35:26] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2013-05-06', 'q')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('q', 'q', 'q', '12', 'abdullah.enayet@gmail.com', '2010-05-02', '26', '2', '12', '1212', '123', '2', ''1', '2013-05-06', 'q')<br><br><br>
+[03-May-2016 06:15:33] 0:admin:packages.inc:532: array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array
+[03-May-2016 06:15:33] 0:admin:packages.inc:532: array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array
+[03-May-2016 06:15:33] 0:admin:packages.inc:532: array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array
+[03-May-2016 06:15:33] 0:admin:packages.inc:532: array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array
+[04-May-2016 03:26:55] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2016-05-03', 'qwqwqw')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('qwqw', 'qwqw', 'qwqw', '1747803655', 'abdullah.enayet@gmail.com', '1991-05-08', '52', '1', '12', '11212', '121212', '3', ''1', '2016-05-03', 'qwqwqw')<br><br><br>
+[04-May-2016 03:27:04] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2016-05-03', 'qwqwqw')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('qwqw', 'qwqw', 'qwqw', '1747803655', 'abdullah.enayet@gmail.com', '1991-05-08', '52', '1', '12', '11212', '121212', '3', ''1', '2016-05-03', 'qwqwqw')<br><br><br>
+[04-May-2016 03:27:06] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', '2016-05-03', 'qwqwqw')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('qwqw', 'qwqw', 'qwqw', '1747803655', 'abdullah.enayet@gmail.com', '1991-05-08', '52', '1', '12', '11212', '121212', '3', ''1', '2016-05-03', 'qwqwqw')<br><br><br>
+[04-May-2016 05:43:10] 0:admin:search_dimensions.php:180: mysql_fetch_row() expects parameter 1 to be resource, boolean given
+[04-May-2016 05:43:34] 0:admin:search_dimensions.php:180: mysql_fetch_row() expects parameter 1 to be resource, boolean given
+[04-May-2016 05:49:12] 0:admin:search_dimensions.php:180: mysql_fetch_row() expects parameter 1 to be resource, boolean given
+[04-May-2016 05:49:16] 0:admin:search_dimensions.php:180: mysql_fetch_row() expects parameter 1 to be resource, boolean given
+[04-May-2016 05:56:01] 0:admin:search_dimensions.php:180: mysql_fetch_row() expects parameter 1 to be resource, boolean given
+[04-May-2016 05:56:05] 0:admin:search_dimensions.php:180: mysql_fetch_row() expects parameter 1 to be resource, boolean given
+[04-May-2016 06:02:37] 0:admin:search_dimensions.php:180: mysql_fetch_row() expects parameter 1 to be resource, boolean given
+[04-May-2016 08:46:35] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-04', '')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('abdullah', 'abdullah', 'goran', '757475', '', '2016-05-04', '260', '1', '', '0', '188', '3', ''2', '2016-05-04', '')<br><br><br>
+[04-May-2016 08:46:38] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-04', '')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('abdullah', 'abdullah', 'goran', '757475', '', '2016-05-04', '260', '1', '', '0', '188', '3', ''2', '2016-05-04', '')<br><br><br>
+[04-May-2016 08:46:39] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-04', '')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('abdullah', 'abdullah', 'goran', '757475', '', '2016-05-04', '260', '1', '', '0', '188', '3', ''2', '2016-05-04', '')<br><br><br>
+[04-May-2016 08:46:59] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-04', '')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('abdullah', 'abdullah', 'goran', '757475', '', '2016-05-04', '260', '1', '44', '88', '188', '3', ''2', '2016-05-04', '')<br><br><br>
+[04-May-2016 08:48:10] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-01', 'go')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('rakib', 'gvsvusa', 'goran', '08747230764038', '46796-34-67063@gmail.com', '2016-05-03', '260', '1', 'ok', '0', '56', '3', ''2', '2016-05-01', 'go')<br><br><br>
+[04-May-2016 08:48:12] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-01', 'go')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('rakib', 'gvsvusa', 'goran', '08747230764038', '46796-34-67063@gmail.com', '2016-05-03', '260', '1', 'ok', '0', '56', '3', ''2', '2016-05-01', 'go')<br><br><br>
+[04-May-2016 08:48:13] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-01', 'go')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('rakib', 'gvsvusa', 'goran', '08747230764038', '46796-34-67063@gmail.com', '2016-05-03', '260', '1', 'ok', '0', '56', '3', ''2', '2016-05-01', 'go')<br><br><br>
+[04-May-2016 08:48:14] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-01', 'go')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('rakib', 'gvsvusa', 'goran', '08747230764038', '46796-34-67063@gmail.com', '2016-05-03', '260', '1', 'ok', '0', '56', '3', ''2', '2016-05-01', 'go')<br><br><br>
+[04-May-2016 08:48:15] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-01', 'go')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('rakib', 'gvsvusa', 'goran', '08747230764038', '46796-34-67063@gmail.com', '2016-05-03', '260', '1', 'ok', '0', '56', '3', ''2', '2016-05-01', 'go')<br><br><br>
+[04-May-2016 08:48:15] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2', '2016-05-01', 'go')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, shift, emp_hiredate, emp_notes) VALUES ('rakib', 'gvsvusa', 'goran', '08747230764038', '46796-34-67063@gmail.com', '2016-05-03', '260', '1', 'ok', '0', '56', '3', ''2', '2016-05-01', 'go')<br><br><br>
+[04-May-2016 08:56:31] 0:admin:employee_db.inc:4: Missing argument 15 for add_employee(), called in C:\xampp\htdocs\frontaccounting\modules\payroll\employees.php on line 124 and defined
+[04-May-2016 08:56:31] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '05/04/2016', '', '')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, emp_hiredate, emp_notes) VALUES ('kjbl', 'gjbgjb', 'kghhh', '12345667', '', '2016-05-04', '260', '1', '22', '0', '34444', '1', ''05/04/2016', '', '')<br><br><br>
+[04-May-2016 08:56:32] 0:admin:employee_db.inc:4: Missing argument 15 for add_employee(), called in C:\xampp\htdocs\frontaccounting\modules\payroll\employees.php on line 124 and defined
+[04-May-2016 08:56:32] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '05/04/2016', '', '')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, emp_hiredate, emp_notes) VALUES ('kjbl', 'gjbgjb', 'kghhh', '12345667', '', '2016-05-04', '260', '1', '22', '0', '34444', '1', ''05/04/2016', '', '')<br><br><br>
+[04-May-2016 08:56:33] 0:admin:employee_db.inc:4: Missing argument 15 for add_employee(), called in C:\xampp\htdocs\frontaccounting\modules\payroll\employees.php on line 124 and defined
+[04-May-2016 08:56:33] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '05/04/2016', '', '')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, emp_hiredate, emp_notes) VALUES ('kjbl', 'gjbgjb', 'kghhh', '12345667', '', '2016-05-04', '260', '1', '22', '0', '34444', '1', ''05/04/2016', '', '')<br><br><br>
+[04-May-2016 08:57:02] 0:admin:employee_db.inc:4: Missing argument 15 for add_employee(), called in C:\xampp\htdocs\frontaccounting\modules\payroll\employees.php on line 124 and defined
+[04-May-2016 08:57:02] <b>DATABASE ERROR :</b> The employee could not be added<br>error code : 1064<br>error message : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '05/04/2016', '', '')' at line 3<br>sql that failed was : INSERT INTO 0_employees (emp_first_name, emp_last_name, emp_address, emp_phone, emp_email, emp_birthdate, 
+			emp_payfrequency, emp_filingstatus, emp_allowances,
+			emp_extrawitholding, emp_taxid, emp_type, emp_hiredate, emp_notes) VALUES ('kjbl', 'gjbgjb', 'kghhh', '12345667', '', '2016-05-04', '260', '1', '22', '0', '34444', '1', ''05/04/2016', '', '')<br><br><br>
+[04-May-2016 08:59:57] 0:admin:employee_db.inc:4: Missing argument 15 for add_employee(), called in C:\xampp\htdocs\frontaccounting\modules\payroll\employees.php on line 124 and defined
+[04-May-2016 09:00:24] <b>DATABASE ERROR :</b> could not do check empty query<br>error code : 1146<br>error message : Table 'frontaccounting.0_payroll_tax_type' doesn't exist<br>sql that failed was : SELECT COUNT(*) FROM 0_payroll_tax_type<br><br><br>
