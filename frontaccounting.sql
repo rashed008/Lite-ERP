@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 28, 2016 at 11:16 AM
+-- Generation Time: May 04, 2016 at 10:49 AM
 -- Server version: 5.1.41
 -- PHP Version: 5.3.1
 
@@ -360,6 +360,10 @@ CREATE TABLE IF NOT EXISTS `0_comments` (
 -- Dumping data for table `0_comments`
 --
 
+INSERT INTO `0_comments` (`type`, `id`, `date_`, `memo_`) VALUES
+(40, 5, '0020-01-00', '05/04/2016'),
+(40, 6, '2016-05-01', '12'),
+(40, 7, '2016-05-01', '121');
 
 -- --------------------------------------------------------
 
@@ -402,7 +406,7 @@ CREATE TABLE IF NOT EXISTS `0_crm_categories` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `type` (`type`,`action`),
   UNIQUE KEY `type_2` (`type`,`name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `0_crm_categories`
@@ -420,7 +424,8 @@ INSERT INTO `0_crm_categories` (`id`, `type`, `action`, `name`, `description`, `
 (9, 'supplier', 'general', 'General', 'General contact data for supplier', 1, 0),
 (10, 'supplier', 'order', 'Orders', 'Order confirmation', 1, 0),
 (11, 'supplier', 'delivery', 'Deliveries', 'Delivery coordination', 1, 0),
-(12, 'supplier', 'invoice', 'Invoices', 'Invoice posting', 1, 0);
+(12, 'supplier', 'invoice', 'Invoices', 'Invoice posting', 1, 0),
+(13, 'test', 'delivery', 'test1', 'testing purpose', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -436,12 +441,16 @@ CREATE TABLE IF NOT EXISTS `0_crm_contacts` (
   `entity_id` varchar(11) DEFAULT NULL COMMENT 'entity id in related class table',
   PRIMARY KEY (`id`),
   KEY `type` (`type`,`action`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `0_crm_contacts`
 --
 
+INSERT INTO `0_crm_contacts` (`id`, `person_id`, `type`, `action`, `entity_id`) VALUES
+(1, 1, 'cust_branch', 'general', '1'),
+(2, 1, 'customer', 'general', '1'),
+(3, 2, 'cust_branch', 'general', '2');
 
 -- --------------------------------------------------------
 
@@ -464,12 +473,15 @@ CREATE TABLE IF NOT EXISTS `0_crm_persons` (
   `inactive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `ref` (`ref`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `0_crm_persons`
 --
 
+INSERT INTO `0_crm_persons` (`id`, `ref`, `name`, `name2`, `address`, `phone`, `phone2`, `fax`, `email`, `lang`, `notes`, `inactive`) VALUES
+(1, 'Jahid', 'Jahid Rahman', '', 'House # 02, Flat #  c 1, Block # G 1,  Road # 15/A, Section # 2 Mirpur', '1747803655', '01747803655', '1747803655', 'jahidbubt002@gmail.com', '', '', 0),
+(2, 'Main Branch', 'Main Branch', '', '', '', '', '', '', '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -553,12 +565,15 @@ CREATE TABLE IF NOT EXISTS `0_cust_branch` (
   KEY `branch_code` (`branch_code`),
   KEY `branch_ref` (`branch_ref`),
   KEY `group_no` (`group_no`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `0_cust_branch`
 --
 
+INSERT INTO `0_cust_branch` (`branch_code`, `debtor_no`, `br_name`, `br_address`, `area`, `salesman`, `contact_name`, `default_location`, `tax_group_id`, `sales_account`, `sales_discount_account`, `receivables_account`, `payment_discount_account`, `default_ship_via`, `disable_trans`, `br_post_address`, `group_no`, `notes`, `inactive`, `branch_ref`) VALUES
+(1, 1, 'Jahid Rahman', 'House # 02, Flat #  c 1, Block # G 1,  Road # 15/A, Section # 2 Mirpur', 1, 1, '', 'DEF', 1, '', '4020', '1200', '4020', 2, 0, 'House # 02, Flat #  c 1, Block # G 1,  Road # 15/A, Section # 2 Mirpur', 0, 'hghg', 0, 'Jahid'),
+(2, 0, 'Gulshan', '', 1, 2, '', 'DEF', 1, '', '4020', '1200', '4020', 1, 0, '', 3, '', 0, 'Gulshan');
 
 -- --------------------------------------------------------
 
@@ -586,12 +601,14 @@ CREATE TABLE IF NOT EXISTS `0_debtors_master` (
   PRIMARY KEY (`debtor_no`),
   UNIQUE KEY `debtor_ref` (`debtor_ref`),
   KEY `name` (`name`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `0_debtors_master`
 --
 
+INSERT INTO `0_debtors_master` (`debtor_no`, `name`, `address`, `tax_id`, `curr_code`, `sales_type`, `dimension_id`, `dimension2_id`, `credit_status`, `payment_terms`, `discount`, `pymt_discount`, `credit_limit`, `notes`, `inactive`, `debtor_ref`) VALUES
+(1, 'Jahid Rahman', 'House # 02, Flat #  c 1, Block # G 1,  Road # 15/A, Section # 2 Mirpur', '', 'EUR', 1, 1, 0, 1, 4, 0.1, 0.1, 100000, 'hghg', 0, 'Jahid');
 
 -- --------------------------------------------------------
 
@@ -670,6 +687,7 @@ CREATE TABLE IF NOT EXISTS `0_dimensions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `reference` varchar(60) NOT NULL DEFAULT '',
   `name` varchar(60) NOT NULL DEFAULT '',
+  `meter` int(40) NOT NULL,
   `type_` tinyint(1) NOT NULL DEFAULT '1',
   `closed` tinyint(1) NOT NULL DEFAULT '0',
   `date_` date NOT NULL DEFAULT '0000-00-00',
@@ -679,12 +697,22 @@ CREATE TABLE IF NOT EXISTS `0_dimensions` (
   KEY `date_` (`date_`),
   KEY `due_date` (`due_date`),
   KEY `type_` (`type_`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `0_dimensions`
 --
 
+INSERT INTO `0_dimensions` (`id`, `reference`, `name`, `meter`, `type_`, `closed`, `date_`, `due_date`) VALUES
+(3, '3', 'q', 0, 127, 0, '0020-01-00', '2016-05-03'),
+(4, '4', 'abcd', 0, 127, 0, '0020-01-00', '2016-05-01'),
+(5, '5', '12', 0, 122, 0, '0020-01-00', '2016-05-01'),
+(6, '6', 'w33', 4321, 1, 0, '2016-05-01', '2016-05-04'),
+(7, '7', '12345', 565656, 1, 1, '2016-05-01', '2016-05-04'),
+(8, '8', '123', 5555, 1, 0, '2016-05-04', '0000-00-00'),
+(9, '919', 'NFS123', 235689, 1, 0, '2016-05-02', '0000-00-00'),
+(11, '952', '1222', 233344, 1, 0, '2016-05-04', '0000-00-00'),
+(12, '999', '12121', 12313, 1, 0, '2016-05-03', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -711,14 +739,15 @@ CREATE TABLE IF NOT EXISTS `0_employees` (
   `emp_notes` tinytext NOT NULL,
   `inactive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`emp_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `0_employees`
 --
 
 INSERT INTO `0_employees` (`emp_id`, `emp_first_name`, `emp_last_name`, `emp_address`, `emp_phone`, `emp_email`, `emp_birthdate`, `emp_payfrequency`, `emp_filingstatus`, `emp_allowances`, `emp_extrawitholding`, `emp_taxid`, `emp_hiredate`, `emp_releasedate`, `emp_type`, `emp_notes`, `inactive`) VALUES
-(1, 'Muhammad', 'Abdullah', 'Goran, Dhaka', '01747803655', 'abdullah.enayet@gmail.com', '1992-09-01', '12', '1', 0, 0, '112132356', '2016-04-28', '0000-00-00', '1', '', 0);
+(3, 'Jahidrmn', 'Rahman', 'Mirpur 1', '01747803655', 'jahidbubt002@gmail.com', '1992-12-12', '260', '1', 12, 1212, '34', '2016-05-01', '0000-00-00', '1', 'No Note', 0),
+(4, 'Jahid', 'Rahman', 'House # 02, Flat #  c 1, Block # G 1,  Road # 15/A, Section # 2 Mirpur', '1747803655', 'abdullah.enayet@gmail.com', '2016-05-04', '12', '1', 1, 12, '12', '0020-00-00', NULL, '2', '', 0);
 
 -- --------------------------------------------------------
 
@@ -775,14 +804,15 @@ CREATE TABLE IF NOT EXISTS `0_fiscal_year` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `begin` (`begin`),
   UNIQUE KEY `end` (`end`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `0_fiscal_year`
 --
 
 INSERT INTO `0_fiscal_year` (`id`, `begin`, `end`, `closed`) VALUES
-(1, '2008-01-01', '2008-12-31', 0);
+(1, '2008-01-01', '2008-12-31', 0),
+(2, '2009-01-01', '2010-03-03', 0);
 
 -- --------------------------------------------------------
 
@@ -902,12 +932,14 @@ CREATE TABLE IF NOT EXISTS `0_item_codes` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `stock_id` (`stock_id`,`item_code`),
   KEY `item_code` (`item_code`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `0_item_codes`
 --
 
+INSERT INTO `0_item_codes` (`id`, `item_code`, `stock_id`, `description`, `category_id`, `quantity`, `is_foreign`, `inactive`) VALUES
+(1, '123', '123', 'AMAL', 4, 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -922,12 +954,16 @@ CREATE TABLE IF NOT EXISTS `0_item_tax_types` (
   `inactive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `0_item_tax_types`
 --
 
+INSERT INTO `0_item_tax_types` (`id`, `name`, `exempt`, `inactive`) VALUES
+(1, 'this is test', 0, 0),
+(2, 'yes', 1, 0),
+(3, 'ok', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -1012,6 +1048,8 @@ CREATE TABLE IF NOT EXISTS `0_loc_stock` (
 -- Dumping data for table `0_loc_stock`
 --
 
+INSERT INTO `0_loc_stock` (`loc_code`, `stock_id`, `reorder_level`) VALUES
+('DEF', '123', 0);
 
 -- --------------------------------------------------------
 
@@ -1378,6 +1416,19 @@ CREATE TABLE IF NOT EXISTS `0_refs` (
 -- Dumping data for table `0_refs`
 --
 
+INSERT INTO `0_refs` (`id`, `type`, `reference`) VALUES
+(1, 40, '1'),
+(2, 40, '2'),
+(3, 40, '3'),
+(4, 40, '4'),
+(5, 40, '5'),
+(6, 40, '6'),
+(7, 40, '7'),
+(8, 40, '8'),
+(9, 40, '919'),
+(11, 40, '952'),
+(10, 40, '985'),
+(12, 40, '999');
 
 -- --------------------------------------------------------
 
@@ -1397,14 +1448,15 @@ CREATE TABLE IF NOT EXISTS `0_salesman` (
   `inactive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`salesman_code`),
   UNIQUE KEY `salesman_name` (`salesman_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `0_salesman`
 --
 
 INSERT INTO `0_salesman` (`salesman_code`, `salesman_name`, `salesman_phone`, `salesman_fax`, `salesman_email`, `provision`, `break_pt`, `provision2`, `inactive`) VALUES
-(1, 'Sales Person', '', '', '', 5, 1000, 4, 0);
+(1, 'Sales Person', '', '', '', 5, 1000, 4, 0),
+(2, 'Jahid Rahman', '1747803655', '2131', 'abcd@gmail.cim', 10, 10, 10, 0);
 
 -- --------------------------------------------------------
 
@@ -1483,14 +1535,15 @@ CREATE TABLE IF NOT EXISTS `0_sales_pos` (
   `inactive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `pos_name` (`pos_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `0_sales_pos`
 --
 
 INSERT INTO `0_sales_pos` (`id`, `pos_name`, `cash_sale`, `credit_sale`, `pos_location`, `pos_account`, `inactive`) VALUES
-(1, 'Default', 1, 1, 'DEF', 1, 0);
+(1, 'Default', 1, 1, 'DEF', 1, 0),
+(2, 'POS', 0, 1, 'DEF', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1565,14 +1618,15 @@ CREATE TABLE IF NOT EXISTS `0_shippers` (
   `inactive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`shipper_id`),
   UNIQUE KEY `name` (`shipper_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `0_shippers`
 --
 
 INSERT INTO `0_shippers` (`shipper_id`, `shipper_name`, `phone`, `phone2`, `contact`, `address`, `inactive`) VALUES
-(1, 'Default', '', '', '', '', 0);
+(1, 'Default', '', '', '', '', 0),
+(2, 'IT link', '01747803655', '0125144555', 'Abdullah', 'Goran', 0);
 
 -- --------------------------------------------------------
 
@@ -1664,6 +1718,8 @@ CREATE TABLE IF NOT EXISTS `0_stock_master` (
 -- Dumping data for table `0_stock_master`
 --
 
+INSERT INTO `0_stock_master` (`stock_id`, `category_id`, `tax_type_id`, `description`, `long_description`, `units`, `mb_flag`, `sales_account`, `cogs_account`, `inventory_account`, `adjustment_account`, `assembly_account`, `dimension_id`, `dimension2_id`, `actual_cost`, `last_cost`, `material_cost`, `labour_cost`, `overhead_cost`, `inactive`, `no_sale`, `editable`) VALUES
+('123', 4, 1, 'AMAL', 'test here.', 'ea.', 'M', '2100', '5010', '1065', '1060', '1060', 1, 0, 0, 0, 0, 0, 0, 0, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -1839,35 +1895,35 @@ CREATE TABLE IF NOT EXISTS `0_sys_prefs` (
 
 INSERT INTO `0_sys_prefs` (`name`, `category`, `type`, `length`, `value`) VALUES
 ('coy_name', 'setup.company', 'varchar', 60, 'ITLink'),
-('gst_no', 'setup.company', 'varchar', 25, NULL),
-('coy_no', 'setup.company', 'varchar', 25, NULL),
+('gst_no', 'setup.company', 'varchar', 25, '12346'),
+('coy_no', 'setup.company', 'varchar', 25, '456123'),
 ('tax_prd', 'setup.company', 'int', 11, '1'),
 ('tax_last', 'setup.company', 'int', 11, '1'),
-('postal_address', 'setup.company', 'tinytext', 0, 'N/A'),
-('phone', 'setup.company', 'varchar', 30, NULL),
-('fax', 'setup.company', 'varchar', 30, NULL),
-('email', 'setup.company', 'varchar', 100, NULL),
-('coy_logo', 'setup.company', 'varchar', 100, NULL),
-('domicile', 'setup.company', 'varchar', 55, NULL),
-('curr_default', 'setup.company', 'char', 3, 'CAD'),
+('postal_address', 'setup.company', 'tinytext', 0, 'Gulshan'),
+('phone', 'setup.company', 'varchar', 30, '123456'),
+('fax', 'setup.company', 'varchar', 30, '789456'),
+('email', 'setup.company', 'varchar', 100, 'abc@gmail.com'),
+('coy_logo', 'setup.company', 'varchar', 100, 'aasa.jpg'),
+('domicile', 'setup.company', 'varchar', 55, 'Dhaka'),
+('curr_default', 'setup.company', 'char', 3, 'EUR'),
 ('use_dimension', 'setup.company', 'tinyint', 1, '1'),
 ('f_year', 'setup.company', 'int', 11, '1'),
-('no_item_list', 'setup.company', 'tinyint', 1, '0'),
-('no_customer_list', 'setup.company', 'tinyint', 1, '0'),
-('no_supplier_list', 'setup.company', 'tinyint', 1, '0'),
-('base_sales', 'setup.company', 'int', 11, '-1'),
-('time_zone', 'setup.company', 'tinyint', 1, '0'),
-('add_pct', 'setup.company', 'int', 5, '-1'),
+('no_item_list', 'setup.company', 'tinyint', 1, '1'),
+('no_customer_list', 'setup.company', 'tinyint', 1, '1'),
+('no_supplier_list', 'setup.company', 'tinyint', 1, '1'),
+('base_sales', 'setup.company', 'int', 11, '0'),
+('time_zone', 'setup.company', 'tinyint', 1, '1'),
+('add_pct', 'setup.company', 'int', 5, '2'),
 ('round_to', 'setup.company', 'int', 5, '1'),
-('login_tout', 'setup.company', 'smallint', 6, '600'),
+('login_tout', 'setup.company', 'smallint', 6, '1200'),
 ('past_due_days', 'glsetup.general', 'int', 11, '30'),
-('profit_loss_year_act', 'glsetup.general', 'varchar', 15, '9990'),
-('retained_earnings_act', 'glsetup.general', 'varchar', 15, '2050'),
-('bank_charge_act', 'glsetup.general', 'varchar', 15, '1430'),
+('profit_loss_year_act', 'glsetup.general', 'varchar', 15, '5410'),
+('retained_earnings_act', 'glsetup.general', 'varchar', 15, '1060'),
+('bank_charge_act', 'glsetup.general', 'varchar', 15, '1060'),
 ('exchange_diff_act', 'glsetup.general', 'varchar', 15, '4450'),
 ('default_credit_limit', 'glsetup.customer', 'int', 11, '1000'),
 ('accumulate_shipping', 'glsetup.customer', 'tinyint', 1, '0'),
-('legal_text', 'glsetup.customer', 'tinytext', 0, NULL),
+('legal_text', 'glsetup.customer', 'tinytext', 0, ''),
 ('freight_act', 'glsetup.customer', 'varchar', 15, '5010'),
 ('debtors_act', 'glsetup.sales', 'varchar', 15, '1200'),
 ('default_sales_act', 'glsetup.sales', 'varchar', 15, '4020'),
@@ -1887,7 +1943,10 @@ INSERT INTO `0_sys_prefs` (`name`, `category`, `type`, `length`, `value`) VALUES
 ('default_assembly_act', 'glsetup.items', 'varchar', 15, '1520'),
 ('default_workorder_required', 'glsetup.manuf', 'int', 11, '20'),
 ('version_id', 'system', 'varchar', 11, '2.3rc'),
-('auto_curr_reval', 'setup.company', 'smallint', 6, '1');
+('auto_curr_reval', 'setup.company', 'smallint', 6, '1'),
+('bcc_email', 'setup.company', 'varchar', 100, 'it@gmail.com'),
+('grn_clearing_act', 'glsetup.purchase', 'varchar', 15, '0'),
+('default_quote_valid_days', 'glsetup.sales', 'smallint', 6, '30');
 
 -- --------------------------------------------------------
 
@@ -1928,7 +1987,7 @@ INSERT INTO `0_sys_types` (`type_id`, `type_no`, `next_reference`) VALUES
 (30, 0, '1'),
 (32, 0, '1'),
 (35, 1, '1'),
-(40, 1, '1');
+(40, 1, '9');
 
 -- --------------------------------------------------------
 
@@ -1981,12 +2040,14 @@ CREATE TABLE IF NOT EXISTS `0_tax_groups` (
   `inactive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `0_tax_groups`
 --
 
+INSERT INTO `0_tax_groups` (`id`, `name`, `tax_shipping`, `inactive`) VALUES
+(1, 'name', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -2005,6 +2066,8 @@ CREATE TABLE IF NOT EXISTS `0_tax_group_items` (
 -- Dumping data for table `0_tax_group_items`
 --
 
+INSERT INTO `0_tax_group_items` (`tax_group_id`, `tax_type_id`, `rate`) VALUES
+(1, 1, 7);
 
 -- --------------------------------------------------------
 
@@ -2126,7 +2189,7 @@ CREATE TABLE IF NOT EXISTS `0_users` (
 --
 
 INSERT INTO `0_users` (`id`, `user_id`, `password`, `real_name`, `role_id`, `phone`, `email`, `language`, `date_format`, `date_sep`, `tho_sep`, `dec_sep`, `theme`, `page_size`, `prices_dec`, `qty_dec`, `rates_dec`, `percent_dec`, `show_gl`, `show_codes`, `show_hints`, `last_visit_date`, `query_size`, `graphic_links`, `pos`, `print_profile`, `rep_popup`, `sticky_doc_date`, `startup_tab`, `inactive`) VALUES
-(1, 'admin', '81dc9bdb52d04dc20036dbd8313ed055', 'Administrator', 2, '', 'adm@adm.com', '', 0, 0, 0, 0, 'default', 'Letter', 2, 2, 4, 1, 1, 0, 0, '2016-04-28 08:25:45', 10, 1, 1, '1', 1, 0, 'orders', 0);
+(1, 'admin', '81dc9bdb52d04dc20036dbd8313ed055', 'Administrator', 2, '', 'adm@adm.com', 'C', 0, 0, 0, 0, 'default', 'Letter', 2, 2, 4, 1, 1, 0, 0, '2016-05-04 10:39:48', 10, 1, 1, '', 1, 0, 'orders', 0);
 
 -- --------------------------------------------------------
 
@@ -2160,12 +2223,14 @@ CREATE TABLE IF NOT EXISTS `0_workcentres` (
   `inactive` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `0_workcentres`
 --
 
+INSERT INTO `0_workcentres` (`id`, `name`, `description`, `inactive`) VALUES
+(1, 'Abdullah', 'Enayet', 0);
 
 -- --------------------------------------------------------
 
